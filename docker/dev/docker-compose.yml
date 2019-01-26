@@ -16,4 +16,4 @@ services:
     container_name: "shjp_redis"
     image: "redis:5.0.3"
     ports:
-    - "9100:9100"
+    - "6379:6379"
