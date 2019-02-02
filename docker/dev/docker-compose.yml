@@ -1,19 +1,19 @@
 version: '3'
 services:
   dao_server:
-    container_name: "shjp_dao_server"
-    image: "sanggonlee/shjp:shjp_dao_server"
+    container_name: "shjp-dao-server"
+    image: "sanggonlee/shjp:shjp-dao-server_v1.0.0"
     network_mode: "bridge"
     ports:
      - "8200:8200"
   gateway_server:
-    container_name: "shjp_gateway_server"
-    image: "sanggonlee/shjp:shjp_gateway_server"
+    container_name: "shjp-gateway-server"
+    image: "sanggonlee/shjp:shjp-gateway-server_v1.1.0"
     network_mode: "bridge"
     ports:
     - "8100:8100"
   redis:
-    container_name: "shjp_redis"
+    container_name: "shjp-redis"
     image: "redis:5.0.3"
     ports:
     - "6379:6379"
