@@ -2,13 +2,13 @@ version: '3'
 services:
   dao_server:
     container_name: "shjp-dao-server"
-    image: "sanggonlee/shjp:shjp-dao-server_dev"
+    image: "sanggonlee/shjp:shjp-dao-server_v1.0.1"
     network_mode: "bridge"
     ports:
      - "8200:8200"
   gateway_server:
     container_name: "shjp-gateway-server"
-    image: "sanggonlee/shjp:shjp-gateway-server_dev"
+    image: "sanggonlee/shjp:shjp-gateway-server_v1.1.0"
     network_mode: "bridge"
     ports:
     - "8100:8100"
